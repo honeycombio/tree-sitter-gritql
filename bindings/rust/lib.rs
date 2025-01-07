@@ -41,7 +41,6 @@ pub const NODE_TYPES: &str = include_str!("../../src/node-types.json");
 // pub const LOCALS_QUERY: &str = include_str!("../../queries/locals.scm");
 // pub const TAGS_QUERY: &str = include_str!("../../queries/tags.scm");
 
-
 #[cfg(test)]
 mod tests {
     #[test]
