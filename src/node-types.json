@@ -14588,7 +14588,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "contains",
@@ -14856,11 +14857,11 @@
   },
   {
     "type": "variable",
-    "named": true
+    "named": false
   },
   {
     "type": "variable",
-    "named": false
+    "named": true
   },
   {
     "type": "where",
