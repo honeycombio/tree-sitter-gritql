@@ -648,6 +648,22 @@
     }
   },
   {
+    "type": "backtickSnippet",
+    "named": true,
+    "fields": {
+      "content": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "snippetContent",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "bubble",
     "named": true,
     "fields": {
@@ -1579,6 +1595,22 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "doubleQuoteSnippet",
+    "named": true,
+    "fields": {
+      "content": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "snippetContent",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -12427,6 +12459,22 @@
     }
   },
   {
+    "type": "rawBacktickSnippet",
+    "named": true,
+    "fields": {
+      "content": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "snippetContent",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "regexPattern",
     "named": true,
     "fields": {
@@ -14451,6 +14499,10 @@
     "named": false
   },
   {
+    "type": "\"",
+    "named": false
+  },
+  {
     "type": "%",
     "named": false
   },
@@ -14539,6 +14591,10 @@
     "named": false
   },
   {
+    "type": "`",
+    "named": false
+  },
+  {
     "type": "after",
     "named": false
   },
@@ -14563,10 +14619,6 @@
     "named": false
   },
   {
-    "type": "backtickSnippet",
-    "named": true
-  },
-  {
     "type": "before",
     "named": false
   },
@@ -14588,7 +14640,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "contains",
@@ -14608,10 +14661,6 @@
   },
   {
     "type": "doubleConstant",
-    "named": true
-  },
-  {
-    "type": "doubleQuoteSnippet",
     "named": true
   },
   {
@@ -14775,8 +14824,8 @@
     "named": false
   },
   {
-    "type": "rawBacktickSnippet",
-    "named": true
+    "type": "raw`",
+    "named": false
   },
   {
     "type": "regex",
@@ -14800,6 +14849,10 @@
   },
   {
     "type": "signedIntConstant",
+    "named": true
+  },
+  {
+    "type": "snippetContent",
     "named": true
   },
   {
@@ -14856,11 +14909,11 @@
   },
   {
     "type": "variable",
-    "named": true
+    "named": false
   },
   {
     "type": "variable",
-    "named": false
+    "named": true
   },
   {
     "type": "where",

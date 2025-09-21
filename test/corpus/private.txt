@@ -20,12 +20,14 @@ nice()
       (name)
       (patternDefinitionBody
         (codeSnippet
-          (backtickSnippet)))))
+          (backtickSnippet
+            (snippetContent))))))
   (definition
     (patternDefinition
       (name)
       (patternDefinitionBody
         (codeSnippet
-          (backtickSnippet)))))
+          (backtickSnippet
+            (snippetContent))))))
   (nodeLike
     (name)))

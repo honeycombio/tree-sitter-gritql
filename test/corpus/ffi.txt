@@ -20,6 +20,7 @@ function adder() js {
           (noBraces)))))
   (rewrite
     (codeSnippet
-      (backtickSnippet))
+      (backtickSnippet
+        (snippetContent)))
     (nodeLike
       (name))))
