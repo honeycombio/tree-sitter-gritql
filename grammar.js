@@ -612,11 +612,16 @@ module.exports = grammar({
         'elixir',
       ),
 
-    backtickSnippet: (_$) => /`(?:[^`\\]|\\\$|\\\\|\\`|\\n)*`/,
+    snippetContent: (_$) => /(?:[^`\\]|\\\$|\\\\|\\`|\\n)*/,
 
-    rawBacktickSnippet: (_$) => /raw`(?:[^`\\]|\\\$|\\\\|\\`|\\n)*`/,
+    // TODO: Use choice to consolidate backtickSnippet, rawBacktickSnippet, doubleQuoteSnippet
+    // into a single rule
 
-    doubleQuoteSnippet: (_$) => /"(?:[^"\\]|\\\$|\\\\|\\"|\\n)*"/,
+    backtickSnippet: ($) => seq('`', field('content', $.snippetContent), '`'),
+
+    rawBacktickSnippet: ($) => seq('raw`', field('content', $.snippetContent), '`'),
+
+    doubleQuoteSnippet: ($) => seq('"', field('content', $.snippetContent), '"'),
 
     languageSpecificSnippet: ($) =>
       seq(field('language', $.languageName), field('snippet', $.doubleQuoteSnippet)),
