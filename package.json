@@ -24,9 +24,9 @@
     "build": "tree-sitter generate",
     "parse": "tree-sitter parse",
     "test": "tree-sitter test",
-    "wasm": "tree-sitter build-wasm",
+    "wasm": "tree-sitter build --wasm",
     "web": "tree-sitter web-ui",
-    "generate": "tree-sitter generate && tree-sitter build-wasm",
+    "generate": "tree-sitter generate && tree-sitter build --wasm",
     "install": "node-gyp-build",
     "prebuildify": "prebuildify --napi --strip"
   },
