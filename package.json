@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-gritql",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "gritql grammar for tree-sitter",
   "repository": "tree-sitter-grammars/tree-sitter-gritql",
@@ -28,7 +28,8 @@
     "web": "tree-sitter web-ui",
     "generate": "tree-sitter generate && tree-sitter build --wasm",
     "install": "node-gyp-build",
-    "prebuildify": "prebuildify --napi --strip"
+    "prebuildify": "prebuildify --napi --strip",
+    "prepublishOnly": "npm run generate"
   },
   "main": "bindings/node",
   "types": "bindings/node",
