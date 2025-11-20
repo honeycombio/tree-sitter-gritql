@@ -5925,6 +5925,10 @@
         {
           "type": "STRING",
           "value": "elixir"
+        },
+        {
+          "type": "STRING",
+          "value": "xml"
         }
       ]
     },

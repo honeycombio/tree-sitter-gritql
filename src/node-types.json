@@ -14924,6 +14924,10 @@
     "named": false
   },
   {
+    "type": "xml",
+    "named": false
+  },
+  {
     "type": "yaml",
     "named": false
   },
