@@ -610,6 +610,7 @@ module.exports = grammar({
         'cpp',
         'kotlin',
         'elixir',
+        'xml',
       ),
 
     snippetContent: (_$) => /(?:[^`\\]|\\\$|\\\\|\\`|\\n)*/,
